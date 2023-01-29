@@ -7,8 +7,17 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --WhiteColor:#ffffff;
+    --DarkColor: #003147;
+    --BackgroundColor: lightblue;
+    --textColor: #333333;
+    --HeadColor:#2a7da2;
+    --iconsBlue: #03a9f4;
+}
+
 body{
-    background: lightblue;
+    background: var(--BackgroundColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +30,7 @@ body{
     max-width: 1000px;
     min-height: 1000px;
     margin: 50px;
-    background: #fff;
+    background: var(--WhiteColor);
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
@@ -31,7 +40,7 @@ body{
 
 .container .left_side{
     position: relative;
-    background: #003147;
+    background: var(--DarkColor);
     padding: 40px;
 }
 
@@ -64,7 +73,7 @@ body{
 }
 
 .profile-text h2{
-    color: #fff;
+    color: var(--WhiteColor);
     font-size: 1.5rem;
     margin-top: 20px;
     text-transform: uppercase;
@@ -74,7 +83,7 @@ body{
 }
 
 .profile-text h2 span{
-    color: #fff;
+    color: var(--WhiteColor);
     font-size: 0.8em;
     font-weight: 300;
 }
@@ -86,7 +95,7 @@ body{
 }
 
 .title{
-    color: #fff;
+    color: var(--WhiteColor);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -107,16 +116,16 @@ body{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03a9f4;
+    color: var(--iconsBlue);
 }
 
 .contactInfo ul li span{
-    color: #fff;
+    color: var(--WhiteColor);
     font-weight: 300;
 }
 
 .contactInfo .contactInfo-link{
-    color: #fff;
+    color: var(--WhiteColor);
     font-weight: 300;
     text-decoration: none;
 }
@@ -137,7 +146,7 @@ body{
 }
 
 .language ul li span{
-    color: #fff;
+    color: var(--WhiteColor);
     font-weight: 300;
 }
 .language .percent{
@@ -154,7 +163,7 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: var(--iconsBlue);
 }
 
 /* ======== Interest ========== */
@@ -170,13 +179,13 @@ body{
 
 .interest ul li{
     list-style: none;
-    color: #fff;
+    color: var(--WhiteColor);
     font-weight: 500;
     margin: 10px 0;
 }
 
 .interest ul li .hobby{
-    color: #03a9f4;
+    color: var(--iconsBlue);
     font-size: 18px;
     width: 20px;
 }
@@ -194,7 +203,7 @@ body{
 
 .container .right_side{
     position: relative;
-    background:#fff;
+    background:var(--WhiteColor);
     padding: 40px;
 }
 
@@ -209,14 +218,14 @@ body{
 }
 
 .title2{
-    color: #003147;
+    color: var(--DarkColor);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 p{
-    color: #333;
+    color: var(--textColor);
     font-weight: 500;
 }
 
@@ -240,7 +249,7 @@ p{
 
 .about .box .text h4{
     text-transform: uppercase;
-    color: #2a7da2;
+    color: var(--HeadColor);
     font-size: 16px;
 }
 
@@ -274,7 +283,7 @@ p{
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: var(--iconsBlue);
 }
 
 /* ======== Projects ========= */
@@ -290,7 +299,7 @@ p{
 }
 .projects ul li a{
     text-transform: uppercase;
-    color: #333;
+    color: var(--textColor);
     font-weight: 500;
     text-decoration: none;
     font-size: 20px;
@@ -298,13 +307,17 @@ p{
 }
 
 .projects .project-icon{
-    color: #03a9f4;
+    color: var(--iconsBlue);
     font-size: 18px;
     width: 20px;
 }
 
 .projects .project-icon:hover{
-    color: #2a7da2;
+    color: var(--HeadColor);
+}
+
+.clickable{
+    font-size: 12px !important;
 }
 
 /* ======== Strength ========= */
@@ -312,7 +325,7 @@ p{
 .strengths ul li{
     list-style: none;
     text-transform: uppercase;
-    color: #333;
+    color: var(--textColor);
     font-weight: 500;
     padding-left: 20px;
     position: relative;
@@ -321,7 +334,7 @@ p{
     content: '';
     height: .5em;
     width: .5em;
-    background: #03a9f4;
+    background: var(--iconsBlue);
     display: block;
     position: absolute;
     transform: rotate(45deg);
